@@ -20,6 +20,7 @@ playGame.prototype = {
     game.load.image("ball", "assets/ball.png");
     game.load.image("target", "assets/target.png");
     game.load.image("arm", "assets/arm.png");
+    game.load.image("background", "assets/back.jpg")
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
@@ -39,7 +40,7 @@ playGame.prototype = {
     do {
       this.tintColor2 = bgColors[game.rnd.between(0, bgColors.length - 1)];
     } while (this.tintColor == this.tintColor2)
-    game.stage.backgroundColor = this.tintColor;
+    this.background = this.game.add.tileSprite(0, 0, 960, 900, 'background');
     this.targetArray = [];
     this.steps = 0;
     this.rotatingDirection = game.rnd.between(0, 1);
