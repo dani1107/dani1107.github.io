@@ -3,7 +3,7 @@ var game;
 var ballDistance = 120;
 var rotationSpeed = 4;
 var angleRange = [25, 155];
-var visibleTargets = 6;
+var visibleTargets = 7;
 var bgColors = [0x62bd18, 0xffbb00, 0xff5300, 0xd21034, 0xff475c, 0x8f16b2];
 
 
