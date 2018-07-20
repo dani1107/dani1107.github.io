@@ -33,7 +33,7 @@ playGame.prototype = {
       font: "bold 64px Arial",
       fill: "#ffffff"
     };
-    var text = game.add.text(0, game.height - 64, "Best score: " + this.savedData.score.toString(), style);
+    var text = game.add.text(0, game.height - 64, "Skor paling luek: " + this.savedData.score.toString(), style);
     this.destroy = false;
     this.saveRotationSpeed = rotationSpeed;
     this.tintColor = bgColors[game.rnd.between(0, bgColors.length - 1)];
